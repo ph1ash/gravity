@@ -24,7 +24,7 @@ def GetPaoUrl():
             break
         else: # Otherwise add the entry into the list
             for entry in parseJson['data']:
-                jpgList.append(str(entry['cover']['small_square_url'].encode('utf-8').decode('latin-1')))
+                jpgList.append(str(entry['cover']['thumb_url'].encode('utf-8').decode('latin-1')))
                 #jpgList.append(str(entry['cover']['micro_square_image_url'].encode('utf-8').decode('latin-1')))
         pageIdx += 1
     selectionValue = int(np.random.uniform(low=0, high=len(jpgList)))
