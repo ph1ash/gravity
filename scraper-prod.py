@@ -45,7 +45,7 @@ def GetPaoUrl():
 
 def GetWeather():
     baseUrl = "https://api.openweathermap.org/data/2.5/weather?"
-    appId = "ee3f3b74571c87be2297e528f4074376"
+    appId = AppId.weatherApiKey
     parser = reqparse.RequestParser()
     lat = lon = ""
     parser.add_argument('lat')
