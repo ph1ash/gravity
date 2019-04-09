@@ -6,7 +6,7 @@ from appId import AppId
 
 class Scraper(Resource):
     def get(self):
-        return ValidateAppId(GetPaoUrl)
+        return ValidateAppIdThenRun(GetPaoUrl)
 
     # def post(self):
     #    args = parser.parse_args()
